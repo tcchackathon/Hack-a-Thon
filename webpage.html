@@ -1,7 +1,6 @@
 <html>
 <head>
 <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.3.1/stitch.js"></script>
-<script>
   const client = stitch.Stitch.initializeDefaultAppClient('dealership-oiato');
 
   const db = client.getServiceClient(stitch.RemoteMongoClient.factory, 'mongodb-atlas').db('cars');
@@ -16,6 +15,7 @@
   }).catch(err => {
     console.error(err)
   });
+</script>
 </script>
 </head>
 </html>
